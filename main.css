@@ -1,0 +1,21 @@
+
+
+body {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-container {
+  width: 30rem;
+  background-color: aquamarine;
+
+}
+
+button {
+  background-color: #eeebe7;
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+}
