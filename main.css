@@ -1,21 +1,42 @@
-
-
 body {
-  background-color: whitesmoke;
+  background-color: rgb(197, 92, 92);
   display: flex;
+
   justify-content: center;
 }
 
-.btn-container {
-  width: 30rem;
-  background-color: aquamarine;
+.calc-wrapper {
+  background-color: blue;
+  flex-direction: column;
 
+  .calc-screen {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: right;
+    background-color: red;
+  }
+
+  .btn-container {
+    .row-container {
+      background-color: green;
+    }
+  }
 }
 
 button {
+  width: 100px;
+  height: 100px;
   background-color: #eeebe7;
   width: 4rem;
   height: 4rem;
   border: 1px solid black;
   border-radius: 1rem;
+  cursor: pointer;
+  margin: 1px;
+}
+
+
+#equals-btn {
+  width: 200px;
 }

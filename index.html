@@ -8,12 +8,56 @@
     <title>Simple JS Calc</title>
   </head>
   <body>
-    <div class="btn-container">
-      <button id="add" class="button">+</button>
-      <button id="subtract" class="button">-</button>
-      <button id="multiply" class="button">X</button>
-      <button id="divide" class="button">/</button>
-      <button id="clear" class="button">C</button>
+    <div class="calc-wrapper">
+      <!-- Calculator screen -->
+      <div class="calc-screen">
+        <p id="sum-el">0</p>
+      </div>
+      <!-- Calculator buttons-->
+      <div class="btn-container">
+      
+
+        <div class="row-container">
+          <div class="row">
+            <button id="clear-btn" class="operator-btn">C</button>
+          </div>
+          <div class="row">
+            <button id="divide-btn" class="operator-btn" onClick="divide()">
+              /
+            </button>
+          </div>
+          <div class="row">
+            <button id="num7" class="num-btn">7</button>
+            <button id="num8" class="num-btn">8</button>
+            <button id="num9" class="num-btn">9</button>
+            <button id="multiply-btn" class="operator-btn" onClick="multiply()">
+              X
+            </button>
+          </div>
+
+          <div class="row">
+            <button id="num4" class="num-btn">4</button>
+            <button id="num5" class="num-btn">5</button>
+            <button id="num6" class="num-btn">6</button>
+            <button id="subtract-btn" class="operator-btn" onClick="subtract()">
+              -
+            </button>
+          </div>
+
+          <div class="row">
+            <button id="num1" class="num-btn">1</button>
+            <button id="num2" class="num-btn">2</button>
+            <button id="num3" class="num-btn">3</button>
+            <button id="add-btn" class="operator-btn" onClick="add()">+</button>
+          </div>
+
+          <div class="row">
+            <button id="num0" class="num-btn">0</button>
+            <button id="decimal" class="operator-btn">.</button>
+            <button id="equals-btn" class="operator-btn">=</button>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
